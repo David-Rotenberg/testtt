@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@seyuna/runtime-sdk": [
+        "./src/_seyuna/runtime-sdk/index.ts"
+      ],
+      "@seyuna/runtime-sdk/server": [
+        "./src/_seyuna/runtime-sdk/server/index.ts"
+      ],
+      "@seyuna/runtime-sdk/client": [
+        "./src/_seyuna/runtime-sdk/client/index.ts"
+      ],
+      "@seyuna/components": [
+        "./src/_seyuna/components/index.ts"
+      ],
+      "@seyuna/components/manifest": [
+        "./src/_seyuna/components/manifest.ts"
+      ],
+      "@seyuna/schema": [
+        "./src/_seyuna/schema/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "astro.config.ts",
+    ".astro/types.d.ts"
+  ]
+}

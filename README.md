@@ -1,15 +1,15 @@
 # dddaadwda
 
-A Seyuna project.
+A simple, clean todo app to create, manage, and track your tasks.
 
-This repository mirrors a project on [Seyuna](https://seyuna.com). The full app code
-lands here as the AI builder generates it — for now this repo is a placeholder.
-
-## Manage on Seyuna
-<https://builder.seyuna.com/projects/proj_09746f818c7245cd987ffeea>
-
-## Clone
+## Quick start (local dev)
 
 ```bash
-git clone git@github.com:David-Rotenberg/testtt.git
+pnpm install
+pnpm db:migrate:local
+pnpm dev
 ```
+
+## About this code
+
+This project was generated from a Seyuna DSL and is hosted on the Seyuna platform. Re-running the generator updates the files but preserves anything marked user-owned in `manifest.json`. The Seyuna SDK is vendored into `src/_seyuna/` so the project typechecks independently.

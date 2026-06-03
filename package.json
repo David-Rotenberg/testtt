@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "@astrojs/cloudflare": "^13.5.0",
+    "@astrojs/react": "^5.0.4",
+    "@base-ui/react": "^1.4.1",
+    "@libsql/client": "^0.15.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "@tanstack/react-query": "^5.100.10",
+    "astro": "^6.3.1",
+    "better-auth": "^1.6.11",
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.12.18",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tailwindcss": "^4.3.0",
+    "zod": "^4.4.3"
+  },
+  "description": "A simple, clean todo app to create, manage, and track your tasks.",
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6",
+    "wrangler": "^4.90.1"
+  },
+  "name": "dddaadwda",
+  "private": true,
+  "scripts": {
+    "build": "astro build",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "deploy": "astro build && wrangler deploy --config dist/server/wrangler.json",
+    "dev": "wrangler dev",
+    "preview": "wrangler dev",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "astro check"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}
